@@ -1,0 +1,217 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+box-sizing: inherit;
+}
+
+body{
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+.clearfix::after{
+content: "";
+clear: both;
+display: table;
+}
+
+.picture{
+    height: auto;
+    max-width: 100%;
+}
+.page-header{
+    margin-bottom: 70px;
+}
+.site-logo{
+    float: left;
+    text-transform: uppercase;
+    color: #555252;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+.site-logo::first-letter{
+    font-weight: bold;
+    color: #1abc9c;
+}
+.navigation{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.site-navigation{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+.list-nav{
+    float: left;
+}
+.list-nav:last-child{
+    margin-right: 0px;
+}
+.nav-link{
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;   
+    font-size: 14px;
+    font-weight: 800;
+    color: #0f0101;
+    padding: 10px;
+    line-height: 32px;
+}
+
+.nav-link:hover{
+    color: #1abc9c;
+}
+.nav-link:focus{
+    color: #1abc9c;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 58px;
+    font-family: "Roboto", sans-serif;
+    color: #515151;
+    margin: 0px;
+    margin-bottom: 88px;
+    text-align: center;
+}
+.title::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 7px;
+    margin-top: 30px;
+    background-color: #48c9b0;
+}
+.featured-products-list{
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0px;
+}
+.product-item{
+    width: 255px;
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.product-item:nth-child(4n+4){
+    margin-right: 0px;
+}
+.product-item:nth-child(n+5){
+    margin-bottom: 0px;
+}
+.name-price{
+    width: 255px;
+    height: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+}
+.name, .price{
+    float: left;
+    height: 35px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    line-height: 38px;
+    font-size: 18px;
+    margin: 0px;
+}
+.name{
+    width: 200px;
+    height: 39px;
+    background-color: #323232;
+}
+.price{
+    width:54px;
+    height: 39px;
+    background-color: #8c8c8c;
+}
+.name-price:hover .name{
+    background-color: #1abc9c;
+}
+.name-price:hover .price{
+    background-color: #7fd9c7;
+}
+.news{
+    padding-top: 88px;
+}
+
+
+.latest-news-list{
+    list-style: none;
+    width: 1140px;
+    margin: 0px;
+    padding: 0px;  
+}
+
+.latest-news{
+    float: left;
+    width: 347px;
+    margin-right: 30px;
+}
+.latest-news:last-child{
+    margin-right: 0px;
+}
+.news-title{
+    color: #555252;
+    font-size: 18px;
+    margin: 0px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+.news-title2::before{
+    content: "";
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #48c9b0;
+    margin-top: 15px;
+}
+.image{
+    margin-bottom: 30px;
+}
+.news-title2{
+    height: 50px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #555252;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+    margin: 0px;
+    margin-bottom: 14px;
+}
+.read-more-button{
+    display: block;
+    background-color: #4ec6ab;
+    border: none;
+    border-radius: 3px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #f6fbfa;
+    text-transform: capitalize;
+    padding: 18px 0px;
+    width: 160px;
+}
+.read-more{
+    text-decoration: none;
+}
+.read-more-button:hover{
+    background-color: #067962;
+}
