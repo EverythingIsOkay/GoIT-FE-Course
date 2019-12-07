@@ -1,0 +1,379 @@
+*,
+*::before,
+*::after{
+box-sizing: inherit;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+body{
+margin: 0 auto;
+font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.page-header{
+    margin-bottom: 70px;
+    margin-top: 10px;
+    width: 1110px;
+    }
+
+.site-logo{
+     float: left;
+     text-transform: uppercase;
+     color: #555252;
+     font-family: "Roboto", sans-serif;
+     font-size: 30px;
+     text-decoration: none;
+     margin-left: 15px;
+     margin-top: 10px;
+    }
+
+.site-logo::first-letter{
+    font-weight: bold;
+    color: #1abc9c;
+    }
+
+.navigation{
+     list-style-type: none;
+     padding: 0px;
+     margin: 0px;
+    }
+
+.site-navigation{
+     font-family: "Open Sans", sans-serif;
+     list-style: none;
+     margin: 0px;
+     padding: 0px;
+     float: right;
+    }
+    
+.list-nav{
+    float: left;
+    }
+
+.list-nav:last-child{
+    margin-right: 0px;
+    }
+
+.nav-link{
+     text-decoration: none;
+     display: block;
+     text-transform: uppercase;   
+     font-size: 14px;
+     font-weight: 800;
+     color: #0f0101;
+      padding: 10px;
+     line-height: 32px;
+    }
+    
+.nav-link:hover{
+    color: #1abc9c;
+    transition: 0.2s;
+    }
+
+.nav-link:focus{
+    color: #1abc9c;
+    }
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.slides{
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+.slides-item{
+    position: relative;
+}
+
+.slides-title{
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    left: 435px;
+    bottom: 280px;
+    text-transform: uppercase;
+    z-index: 6;  
+}
+
+.one{
+    margin-bottom: 20px;
+    top: 34%;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 40px;
+    width: auto;
+}
+
+.two{
+    margin: 0px;
+    top: 43%;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 16px;
+    left: 435px;
+}
+
+.slider-ctrl{
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(26, 188, 156);
+    border: none;
+    top: 225px;
+    width: 104px;
+    height: 104px;
+}
+
+.next{
+    background-image: url(../img/arrownext.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 1252px;
+    z-index: 77;
+}
+
+.prev{
+    background-image: url(../img/arrowprev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 245px;
+    z-index: 73;  
+}
+
+.title{
+    line-height: 35px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 102px;
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 7px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #48c9b0;
+}
+
+.collection{
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+}
+
+.collection li{
+    position: relative;
+    float: left;
+}
+
+.image:nth-child(-n+3){
+    margin-right: 30px;
+}
+
+.wrapper{
+    background-color: #323232;
+    width: 310px;
+    height: 40px;
+}
+
+h3{
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    width: 200px;
+    height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.price{
+    text-align: center;
+    float: right;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #8c8c8c;
+    width: 45px;
+    height: 40px;
+    margin: 0px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.collection li:hover .wrapper{
+    background-color: #1abc9c;
+    transition: 0.2s;
+}
+
+.collection li:hover .price{
+    background-color: #7fd9c7;
+    transition: 0.2s;
+}
+
+.buy{
+    border: 7.5px solid rgba(255, 255, 255, 0);
+    left: 0%;
+    top: 0%;
+    width: 240px;
+    height: 268px;
+    position: absolute;
+}
+
+.collection li:hover .buy{
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 7.5px solid rgba(255, 255, 255, 0.7);
+}
+
+.icons{
+    position: absolute;
+    width: 166px;
+    height: 107px;
+    border: none;
+    padding: 0px;
+    top: 20%;
+    left: 15%;
+    opacity: 0;
+}
+
+.collection li:hover .icons{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.icons-above{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 6px;
+}
+
+.icons-above:nth-child(-n+2){
+    margin-right: 8px;
+}
+
+.like{
+    background: transparent;
+    background-image: url(../img/heart.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid #ffffff;
+    transition: background-size 0.2s;
+}
+
+.arrows{
+    background: transparent;
+    background-image: url(../img/arrows.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: background-size 0.2s;
+}
+
+.clock{
+    background: transparent;
+    background-image: url(../img/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: background-size 0.2s;
+}
+
+.icons-above-next{
+    width: 166px;
+    height: 50px;
+}
+
+.cart{
+    background: #323232;
+    position: absolute;
+    background-image: url(../img/card.png);
+    background-repeat: no-repeat;
+    background-position: 7% 40%;
+    width: 166px;
+    height: 50px;
+    background-size: 28px;
+    transition: background-size 0.2s;
+}
+
+.add-to-cart{
+    text-transform: uppercase;
+    margin: 0px;
+    font-size: 14px;
+    color: #ffffff;
+    float: right;
+}
+
+.icn:hover{
+    background-size: 35px;
+    border: none;
+    background-color: #1abc9c;
+    transition: 0.2s linear; 
+}
+
+footer{
+    height: 90px;
+    background-color: #323232;
+}
+
+.footer{
+    padding-top: 35px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-text{
+    color: #ffffff;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px;
+}
+
+.footer-link{
+    text-decoration: none;
+    display:inline-block;
+    color: #1abc9c;
+}
+
+
+    
