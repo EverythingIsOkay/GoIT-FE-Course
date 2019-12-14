@@ -122,6 +122,7 @@ display: table;
     bottom: 0px;
 }
 .name, .price{
+    margin: 0px;
     float: left;
     height: 35px;
     color: #ffffff;
@@ -140,16 +141,15 @@ display: table;
     height: 39px;
     background-color: #8c8c8c;
 }
-.name-price:hover .name{
+.product-list:hover .name{
     background-color: #1abc9c;
 }
-.name-price:hover .price{
+.product-list:hover .price{
     background-color: #7fd9c7;
 }
 .news{
     padding-top: 88px;
 }
-
 
 .latest-news-list{
     list-style: none;
@@ -166,7 +166,7 @@ display: table;
 .latest-news:last-child{
     margin-right: 0px;
 }
-.news-title{
+.news-title h3{
     color: #555252;
     font-size: 18px;
     margin: 0px;
@@ -186,7 +186,7 @@ display: table;
 .image{
     margin-bottom: 30px;
 }
-.news-title2{
+.news-title2 h4{
     height: 50px;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
@@ -196,22 +196,19 @@ display: table;
     margin: 0px;
     margin-bottom: 14px;
 }
-.read-more-button{
+.news a{
+    border-radius: 4px;
+    padding-top: 13px;
+    height: 37px;
+    width: 160px;
+    text-align: center;
     display: block;
     background-color: #4ec6ab;
-    border: none;
-    border-radius: 3px;
-    font-family: "Open Sans", sans-serif;
+    color: #f3fbf9;
     font-size: 16px;
-    font-weight: 300;
-    color: #f6fbfa;
-    text-transform: capitalize;
-    padding: 18px 0px;
-    width: 160px;
-}
-.read-more{
+    line-height: 26px;   
     text-decoration: none;
 }
-.read-more-button:hover{
+.news a:hover{
     background-color: #067962;
 }
